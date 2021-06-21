@@ -2,8 +2,8 @@
 <h1 align="center">Vue form wizard</h1>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/inertia-vue-form-wizard"><img src="https://img.shields.io/npm/v/vue-form-wizard.svg"></a>
-  <a href="https://www.npmjs.com/package/inertia-vue-form-wizard"><img src="https://img.shields.io/npm/dt/vue-form-wizard.svg"></a>
+  <a href="https://www.npmjs.com/package/inertia-vue-form-wizard"><img src="https://img.shields.io/npm/v/inertia-vue-form-wizard.svg"></a>
+  <a href="https://www.npmjs.com/package/inertia-vue-form-wizard"><img src="https://img.shields.io/npm/dt/inertia-vue-form-wizard.svg"></a>
   <a href="https://github.com/wrtisans/inertia-vue-form-wizard/blob/master/LICENCE.md"><img src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
 </p>
 
