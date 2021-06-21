@@ -408,26 +408,6 @@
         this.activateTabAndCheckStep(this.activeTabIndex)
         return true
       },
-      tryChangeRoute (tab) {
-        if (this.$router && tab.route) {
-          this.$router.push(tab.route)
-        }
-      },
-      checkRouteChange (route) {
-        let matchingTabIndex = -1
-        let matchingTab = this.tabs.find((tab, index) => {
-          let match = tab.route === route
-          if (match) {
-            matchingTabIndex = index
-          }
-          return match
-        })
-
-        if (matchingTab && !matchingTab.active) {
-          const shouldValidate = matchingTabIndex > this.activeTabIndex
-          this.navigateToTab(matchingTabIndex, shouldValidate)
-        }
-      },
       deactivateTabs () {
         this.tabs.forEach(tab => {
           tab.active = false
@@ -439,7 +419,6 @@
         if (tab) {
           tab.active = true
           tab.checked = true
-          this.tryChangeRoute(tab)
         }
       },
       activateTabAndCheckStep (index) {
@@ -463,11 +442,6 @@
     mounted () {
       this.initializeTabs()
     },
-    watch: {
-      '$route.path' (newRoute) {
-        this.checkRouteChange(newRoute)
-      }
-    }
   }
 </script>
 <style lang="scss">
